@@ -1,6 +1,8 @@
 using AutoMapper;
 using dotnetCore.Controllers.Resources;
 using dotnetCore.model;
+using S.Controllers.Resources;
+using S.model;
 
 namespace dotnetCore.Mapping
 {
@@ -10,6 +12,7 @@ namespace dotnetCore.Mapping
         {
             CreateMap<Make, MakeResource>();
             CreateMap<Model, ModelResource>();
+            CreateMap<Features, KeyValuePairResource>();
         }
     }
 }

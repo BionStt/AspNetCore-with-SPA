@@ -1,5 +1,6 @@
 using dotnetCore.model;
 using Microsoft.EntityFrameworkCore;
+using S.model;
 
 namespace dotnetCore.Persistent
 {
@@ -11,5 +12,6 @@ namespace dotnetCore.Persistent
         }
         public DbSet<Make> Makes { get; set; }
         public DbSet<Model> Models { get; set; }
+        public DbSet<Features> Features { get; set; }
     }
 }
