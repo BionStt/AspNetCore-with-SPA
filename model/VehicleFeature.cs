@@ -1,0 +1,15 @@
+using System;
+using System.ComponentModel.DataAnnotations.Schema;
+using dotnetCore.model;
+
+namespace S.model
+{
+    [Table("VehicleFeatures")]
+    public class VehicleFeature
+    {
+        public int VehicleId { get; set; }
+        public int FeatureId { get; set; }
+        public Vehicle Vehicle { get; set; }
+        public Features Feature { get; set; }
+    }
+}
